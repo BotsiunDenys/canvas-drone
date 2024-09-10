@@ -1,8 +1,9 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import Button from "../Button/Button";
 import s from "./UserForm.module.css";
 
-const UserForm = ({ onSubmit }) => {
+const UserForm = ({ onSubmit, disabled }) => {
   const {
     register,
     handleSubmit,
@@ -43,9 +44,9 @@ const UserForm = ({ onSubmit }) => {
         )}
       </div>
 
-      <button type="submit" className={s.button}>
+      <Button disabled={disabled} type="submit">
         Submit
-      </button>
+      </Button>
     </form>
   );
 };

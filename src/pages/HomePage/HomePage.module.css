@@ -1,0 +1,65 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.scoreboardTitle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titleText {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.block {
+  width: 350px;
+  text-align: center;
+}
+
+.emptyScoreboard {
+  text-align: center;
+  width: 100%;
+}
+
+.scoreboardInfo {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.link {
+  width: 150px;
+  font-size: 20px;
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 6px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  margin: auto 0 0;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
