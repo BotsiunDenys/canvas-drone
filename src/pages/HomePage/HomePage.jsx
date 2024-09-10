@@ -5,6 +5,8 @@ const HomePage = () => {
   const scoreboardInfo = localStorage.getItem("gameScoreboard");
   const scoreboard = scoreboardInfo ? JSON.parse(scoreboardInfo) : [];
 
+  const sortedScoreboard = scoreboard.sort((a, b) => b.score - a.score);
+
   return (
     <main className={s.wrapper}>
       <div className={s.container}>
@@ -13,7 +15,7 @@ const HomePage = () => {
           <span className={`${s.titleText} ${s.block}`}>Complexity</span>
           <span className={`${s.titleText} ${s.block}`}>Score</span>
         </div>
-        {scoreboard.length === 0 ? (
+        {sortedScoreboard.length === 0 ? (
           <h2 className={s.emptyScoreboard}>No existing players</h2>
         ) : (
           scoreboard.map((data) => (
